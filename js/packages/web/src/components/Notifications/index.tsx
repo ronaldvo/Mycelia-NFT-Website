@@ -558,14 +558,8 @@ export function Notifications() {
   );
 
   const justContent = (
-    <Popover
-      className="noty-popover"
-      placement="bottomLeft"
-      content={content}
-      trigger="click"
-    >
-      <h1 className="title">M</h1>
-    </Popover>
+    <a href="/"><h1 className="title">Mycelia</h1></a>
+
   );
 
   if (notifications.length === 0) return justContent;

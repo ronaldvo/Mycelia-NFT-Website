@@ -53,7 +53,7 @@ const DefaultActions = ({ vertical = false }: { vertical?: boolean }) => {
       }}
     >
       <Link to={`/`}>
-        <Button className="app-btn">Explore</Button>
+        <Button className="app-btn">Voyage</Button>
       </Link>
       <Link to={`/artworks`}>
         <Button className="app-btn">
@@ -61,7 +61,7 @@ const DefaultActions = ({ vertical = false }: { vertical?: boolean }) => {
         </Button>
       </Link>
       <Link to={`/artists`}>
-        <Button className="app-btn">Creators</Button>
+        <Button className="app-btn">Rarity</Button>
       </Link>
     </div>
   );
@@ -82,7 +82,7 @@ const MetaplexMenu = () => {
             <Menu>
               <Menu.Item>
                 <Link to={`/`}>
-                  <Button className="app-btn">Explore</Button>
+                  <Button className="app-btn">Voyage</Button>
                 </Link>
               </Menu.Item>
               <Menu.Item>
@@ -94,7 +94,7 @@ const MetaplexMenu = () => {
               </Menu.Item>
               <Menu.Item>
                 <Link to={`/artists`}>
-                  <Button className="app-btn">Creators</Button>
+                  <Button className="app-btn">Rarity</Button>
                 </Link>
               </Menu.Item>
             </Menu>
