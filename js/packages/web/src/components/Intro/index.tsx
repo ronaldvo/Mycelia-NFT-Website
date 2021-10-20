@@ -1,3 +1,27 @@
+import ImageGallery from 'react-image-gallery';
+
+const images = [
+  {
+    original: '/img/1_accent_a.png',
+    originalHeight: '500px',
+    thumbnail: '/img/1_accent_a.png',
+    thumbnailHeight: '100px'
+  },
+  {
+    original: '/img/1_bismuth_a.png',
+    originalHeight: '500px',
+    thumbnail: '/img/1_bismuth_a.png',
+    thumbnailHeight: '100px'
+  },
+  {
+    original: '/img/1_mono_a.png',
+    originalHeight: '500px',
+    thumbnail: '/img/1_mono_a.png',
+    thumbnailHeight: '100px'
+  },
+];
+
+
 export const IntroDiv = () => {
 
     return (
@@ -6,16 +30,23 @@ export const IntroDiv = () => {
             marginTop: '30px',
             overflow: 'hidden'
         }}>
-            <img src="https://media.istockphoto.com/vectors/space-background-wide-realistic-cosmos-with-shining-stars-long-banner-vector-id1283095709"></img>
+            <img style={{ borderRadius: '10px', width: '100%' }} src="/img/banner2.png"></img>
+
         </div>      
         <div style={{
             marginTop: '30px',
             marginLeft: '25px'
         }}>
             <h1 style={{ fontSize: '60px' }}>Voyage Series</h1>
-            <h2>Journey with us as we embark on our maiden voyage in generative art.</h2>
-            <h2>4,050 unique and lovingly curated visual landscapes.</h2>
-            <h2>Launching on Solana Q4 2021. This maiden voyage is just the beginning.</h2>
+            <h3>Journey with us as we embark on our maiden voyage in generative art.</h3>
+            <h3>4,050 unique and lovingly curated visual landscapes. This code generated collection features five color signatures in 15 different pattern variations. </h3>
+            <h3>The first in a collection of series to come. Holders are paid 1% in royalties, and are eligible for future airdrops. Launching on Solana Q4 2021. This maiden voyage is just the beginning.</h3>
+
+
+            <ImageGallery
+              items={images}
+              showNav={true}
+            />            
         </div>
       </>
     );
